@@ -27,7 +27,7 @@ a:hover {
   color: #292a2c;
 }
 
-.btn-yellow {
+.btn-red {
   background-color: #9f0b0b; 
   color: #fff;
 }
@@ -37,7 +37,7 @@ a:hover {
   background: transparent;
 }
 
-.btn-yellow-transparent {
+.btn-red-transparent {
   color: #de614b;
   border: 1px solid #de614b;
 }
@@ -47,12 +47,12 @@ a:hover {
   background-color: #d5d5d5;
 }
 
-.btn-yellow-border {
+.btn-red-border {
   border: 1px solid #9f0b0b;
 }
 
-.btn.btn-yellow-border:hover,
-.btn.btn-yellow-border:focus {
+.btn.btn-red-border:hover,
+.btn.btn-red-border:focus {
   background-color: #9f0b0b; 
   color: #fff; 
 }
@@ -221,7 +221,7 @@ input[type=search] + button:focus {
   background-color: #333;
 }
 
-.yellow-bg {
+.red-bg {
   background-color: #9f0b0b;  
 }
 
@@ -246,7 +246,7 @@ a.white-text:hover {
   color: #333;
 }
 
-.yellow-text {
+.red-text {
   color: #9f0b0b;  
 }
 
@@ -288,7 +288,7 @@ a.white-text:hover {
   color: #fff;
 }
 
-.site-title.yellow-text:hover  {
+.site-title.red-text:hover  {
   color: #9f0b0b;   
 }
 
@@ -558,7 +558,7 @@ a.post-title:hover,
   border-top: 2px solid #f9f8f8;
 }
 
-.copyright .yellow-text:hover {
+.copyright .red-text:hover {
   color: #9f0b0b;
 }
 
