@@ -1135,6 +1135,11 @@ blockquote {
   margin: 0 auto 60px;
 }
 
+.section-subtitle {
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
 /* PAGES
 ================================================== */
 
