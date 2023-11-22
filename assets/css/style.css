@@ -1941,8 +1941,7 @@ a.post-title:hover,
 }
 
 .get-in-touch {
-  position: absolute;
-  left: 20%;
+  text-align: center;
 }
 
 .get-in-touch p {
