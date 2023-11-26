@@ -9,6 +9,10 @@
 	 .col-lg-fifth {
     	width: 20%;
 	}
+
+	.publications {
+		padding: 0 12rem;
+	}
 }
 
 @media only screen and (max-width : 1199px) {
