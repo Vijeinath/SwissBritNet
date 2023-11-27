@@ -68,9 +68,13 @@
             </nav>
         </header>
 
-        <div class="hero background-overlay">
+        <div id="main-background" class="hero background-overlay">
             <div class="hero-text">
-                <h1>The <i class="red-text">SwissBritNet</i> Database</h1>
+                <h1>The <i class="red-text">SwissBritNet</i> Database
+                    <button style="font-size: 2rem; background-color: black;" onclick="changeBG(false)"><</button>
+                    <button style="font-size: 2rem; background-color: black;" onclick="changeBG(true)">></button>
+                </h1>
+
             </div>
             <div class="hero-arrow">
                 <a class="scrollTo" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -265,6 +269,17 @@
         <script src="assets/js/skrollr.min.js"></script>
         <script src="assets/js/jquery.countTo.min.js"></script>
         <script src="assets/js/script.js"></script>
+        <script>
+            let defaultBackgroundNumber = 1;
 
+            function changeBG(next) {
+                if (next) {
+                    defaultBackgroundNumber = (defaultBackgroundNumber + 1) % 14;
+                } else {
+                    defaultBackgroundNumber = (defaultBackgroundNumber + 13) % 14;
+                }
+                document.getElementById("main-background").style.backgroundImage = "url('assets/img/bg-"+ defaultBackgroundNumber +".jpeg')";
+            }
+        </script>
     </body>
 </html>
