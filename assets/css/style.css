@@ -1028,7 +1028,7 @@ blockquote {
   max-height: 720px;
 }
 
-.hero-about-us {
+.hero-about {
  background: url(../img/about-us.jpg) center no-repeat / cover; 
 }
 
@@ -1036,7 +1036,7 @@ blockquote {
  background: url(../img/contact.jpg) center no-repeat / cover; 
 }
 
-.hero-ui-elements {
+.hero-publications {
  background: url(../img/ui-elements.jpg) center no-repeat / cover; 
 }
 
