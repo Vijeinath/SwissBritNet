@@ -1016,28 +1016,34 @@ blockquote {
 /* HERO
 ================================================== */
 .hero {
-  background: url(../img/Collage-01.jpeg) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
   position: relative;
+}
+
+.hero-home {
+  background: url(../img/Collage-01.jpeg) center no-repeat;
   background-size: cover;
 }
 
-.hero-max-720 {
-  max-height: 720px;
+.hero-max-550 {
+  max-height: 550px;
 }
 
 .hero-about {
- background: url(../img/about-us.jpg) center no-repeat / cover; 
+ background: url(../img/Collage-small-1.jpeg) center no-repeat;
+ background-size: cover;
 }
 
 .hero-contact {
- background: url(../img/contact.jpg) center no-repeat / cover; 
+ background: url(../img/Collage-small-1.jpeg) center no-repeat;
+ background-size: cover;
 }
 
 .hero-publications {
- background: url(../img/ui-elements.jpg) center no-repeat / cover; 
+ background: url(../img/Collage-small-1.jpeg) center no-repeat;
+ background-size: cover;
 }
 
 .background-overlay:before {
