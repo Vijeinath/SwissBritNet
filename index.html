@@ -74,10 +74,10 @@
                     <button style="font-size: 2rem; background-color: black;" onclick="changeBG(false)"><</button>
                     <button style="font-size: 2rem; background-color: black;" onclick="changeBG(true)">></button>
                 </h1>
-
             </div>
             <div class="hero-arrow">
                 <a class="scrollTo" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <h3 id="bg-name" class="white-text"></h3>
             </div>
         </div>
 
@@ -274,11 +274,13 @@
 
             function changeBG(next) {
                 if (next) {
-                    defaultBackgroundNumber = (defaultBackgroundNumber + 1) % 14;
+                    defaultBackgroundNumber = (defaultBackgroundNumber + 1) % 6;
                 } else {
-                    defaultBackgroundNumber = (defaultBackgroundNumber + 13) % 14;
+                    defaultBackgroundNumber = (defaultBackgroundNumber + 5) % 6;
                 }
-                document.getElementById("main-background").style.backgroundImage = "url('assets/img/bg-"+ defaultBackgroundNumber +".jpeg')";
+
+                document.getElementById('bg-name').innerText = 'Collage Nr. ' + defaultBackgroundNumber;
+                document.getElementById("main-background").style.backgroundImage = "url('assets/img/Collage-0"+ defaultBackgroundNumber +".jpeg')";
             }
         </script>
     </body>
