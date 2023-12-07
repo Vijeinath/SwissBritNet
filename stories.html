@@ -46,7 +46,7 @@
     </head>
     <body>
 
-        <header id="masthead" class="site-header site-header-fill">
+    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(59,58,54,0); border-bottom-color: rgba(226,226,226,0);" data-top-bottom="background: rgba(59,58,54,1); border-bottom-color: rgba(226,226,226,1);">
             <nav id="primary-navigation" class="site-navigation">
                 <div class="container-fluid">
 
@@ -68,27 +68,31 @@
             </nav>
         </header>
 
+        <div class="hero hero-max-550 collage-background background-overlay">
+            <div class="hero-text">
+                <h1 class="white-text">Stories</h1>
+            </div>
+            <div class="hero-arrow">
+                <a class="scrollTo" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
         <main id="main" class="site-main">
 
             <section class="site-section-small portfolio">
-
-                <div class="container">
-                    <h1 class="section-title-big text-center">Stories</h1>
-                </div>
-
                 <div class="container-fluid">
 
-<!--                    <ul class="portfolio-sorting list-inline text-center">-->
-<!--                        <li><a href="#" class="btn btn-transparent active" data-group="all">All</a></li>-->
-<!--                        <li><a href="#" class="btn btn-transparent" data-group="identity">Identity</a></li>-->
-<!--                        <li><a href="#" class="btn btn-transparent" data-group="uiux">UI/UX</a></li>-->
-<!--                        <li><a href="#" class="btn btn-transparent" data-group="illustrations">Illustrations</a></li>-->
-<!--                        <li><a href="#" class="btn btn-transparent" data-group="branding">Branding</a></li>-->
-<!--                    </ul>-->
+                    <ul class="portfolio-sorting list-inline text-center">
+                        <li><a href="#" class="btn btn-transparent active" data-group="all">All</a></li>
+                        <li><a href="#" class="btn btn-transparent" data-group="frey">Johann Jacob Frey</a></li>
+                        <li><a href="#" class="btn btn-transparent" data-group="wettstein">Caspar Wettstein</a></li>
+                        <li><a href="#" class="btn btn-transparent" data-group="travellers">Travellers</a></li>
+                        <li><a href="#" class="btn btn-transparent" data-group="scholarship">Scholarship</a></li>
+                    </ul>
 
                     <div class="row" id="grid">
 
-                        <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["uiux"]'>
+                        <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["frey"]'>
                             <a class="portfolio-link" href="story-item-1.html">
                                 <img src="assets/img/stories/story-1_preview.jpg" alt="" class="img-carousel">
                                 <div class="portfolio-info">
@@ -102,7 +106,7 @@
                             </a>
                         </div>
 
-                        <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["branding"]'>
+                        <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["travellers"]'>
                             <a class="portfolio-link" href="story-item-2.html">
                                 <img src="assets/img/stories/story-2_preview.jpg" alt="" class="img-carousel">
                                 <div class="portfolio-info">
