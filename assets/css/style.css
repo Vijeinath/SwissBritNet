@@ -1637,6 +1637,10 @@ display: none;
   opacity: 1;
 }
 
+.portfolio-coming-soon {
+    color: white!important;
+}
+
 /*
  * PORTFOLIO ITEM
  */
