@@ -70,10 +70,7 @@
 
         <div id="main-background" class="hero hero-home background-overlay">
             <div class="hero-text">
-                <h1>The <i class="red-text">SwissBritNet</i> Database
-                    <button style="font-size: 2rem; background-color: black;" onclick="changeBG(false)"><</button>
-                    <button style="font-size: 2rem; background-color: black;" onclick="changeBG(true)">></button>
-                </h1>
+                <h1><i class="red-text">SwissBritNet</i></h1>
             </div>
             <div class="hero-arrow">
                 <a class="scrollTo" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -269,20 +266,5 @@
         <script src="assets/js/skrollr.min.js"></script>
         <script src="assets/js/jquery.countTo.min.js"></script>
         <script src="assets/js/script.js"></script>
-        <script>
-            let defaultBackgroundNumber = 1;
-            document.getElementById('bg-name').innerText = 'Collage Nr. ' + defaultBackgroundNumber;
-
-            function changeBG(next) {
-                if (next) {
-                    defaultBackgroundNumber = (defaultBackgroundNumber + 1) % 6;
-                } else {
-                    defaultBackgroundNumber = (defaultBackgroundNumber + 5) % 6;
-                }
-
-                document.getElementById('bg-name').innerText = 'Collage Nr. ' + defaultBackgroundNumber;
-                document.getElementById("main-background").style.backgroundImage = "url('assets/img/Collage-0"+ defaultBackgroundNumber +".jpeg')";
-            }
-        </script>
     </body>
 </html>
