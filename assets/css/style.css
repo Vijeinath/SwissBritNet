@@ -1022,28 +1022,13 @@ blockquote {
   position: relative;
 }
 
-.hero-home {
-  background: url(../img/Collage-01.jpeg) center no-repeat;
+.collage-background {
+  background: url(../img/collage.jpeg) no-repeat;
   background-size: cover;
 }
 
 .hero-max-550 {
   max-height: 550px;
-}
-
-.hero-about {
- background: url(../img/Collage-small-1.jpeg) center no-repeat;
- background-size: cover;
-}
-
-.hero-contact {
- background: url(../img/Collage-small-1.jpeg) center no-repeat;
- background-size: cover;
-}
-
-.hero-publications {
- background: url(../img/Collage-small-1.jpeg) center no-repeat;
- background-size: cover;
 }
 
 .background-overlay:before {
