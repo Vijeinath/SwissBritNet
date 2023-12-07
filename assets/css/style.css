@@ -70,8 +70,8 @@ h1, h2, h3, h4, h5, h6 {
  * Indent
  */
 .indent {
-    text-indent: -8rem;
-    padding-left: 8rem;
+    text-indent: -4rem;
+    padding-left: 4rem;
 }
 
 /* 
