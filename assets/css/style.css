@@ -1027,8 +1027,8 @@ blockquote {
   background-size: cover;
 }
 
-.hero-max-550 {
-  max-height: 550px;
+.hero-max-500 {
+  max-height: 500px;
 }
 
 .background-overlay:before {
