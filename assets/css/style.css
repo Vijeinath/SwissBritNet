@@ -1138,6 +1138,10 @@ blockquote {
  * HOMEPAGE
  */
 
+.home {
+    padding: 0 20rem;
+}
+
 /* Section: Quote */
 .quote {
   font-size: 18px;
