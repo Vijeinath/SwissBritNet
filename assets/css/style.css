@@ -1675,6 +1675,28 @@ display: none;
 }
 
 /*
+ * STORY ITEM
+*/
+article {
+
+}
+.story figure {
+    float: left;
+    width: 45%;
+    margin-inline-end: 4rem;
+}
+
+.story > figure > img {
+    width: 100%;
+}
+
+article::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
  * BLOG
  */
 
