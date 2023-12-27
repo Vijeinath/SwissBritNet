@@ -883,7 +883,8 @@ a.white-text:hover {
 blockquote {
   padding: 0;
   border: 0;
-  font-family: 'Times new roman'; 
+  font-family: 'Times new roman';
+  font-size: 15px;
 }
 
 /* Margin and padding resets */
@@ -1732,10 +1733,6 @@ article::after {
     content: "";
     clear: both;
     display: table;
-}
-
-blockquote {
-    font-size: 15px;
 }
 
 /*
