@@ -137,11 +137,6 @@
 
 	/* HEADER
 	================================================== */
-	/* Site-logo */
-	.site-title {
-		font-size: 16px;
-	}
-
 	/* Navigation */
 	.navbar-nav > li > a {
 		padding: 0px 3px;
@@ -368,11 +363,6 @@
 	/* HEADER
 	================================================== */
 	/* Navigation */
-
-	.site-title {
-		font-size: 17px;
-	}
-
 	.site-title a {
 		position: relative;	
 		line-height: 30px;
