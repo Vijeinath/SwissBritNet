@@ -1448,8 +1448,13 @@ display: none;
     object-fit: cover;
 }
 
+li {
+    text-align: center;
+}
+
 li h3 {
-    font-size: 18px;
+    font-size: 15px;
+    margin: 1rem 0 0.5rem 0;
 }
 
 .no-numbers {
