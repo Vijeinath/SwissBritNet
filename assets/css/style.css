@@ -1450,15 +1450,17 @@ display: none;
 
 li {
     text-align: center;
-}
-
-li h3 {
-    font-size: 15px;
-    margin: 1rem 0 0.5rem 0;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem
 }
 
 .no-numbers {
     list-style-type: none;
+
+    h3 {
+        position: absolute;
+        margin: 0.5rem 0 0 1rem;
+    }
 }
 
 #sister-projects ol {
