@@ -1747,6 +1747,11 @@ article {
     width: 100%;
 }
 
+.story address {
+    margin-top: 3rem;
+    font-style: italic;
+}
+
 article::after {
     content: "";
     clear: both;
