@@ -1448,19 +1448,19 @@ display: none;
     object-fit: cover;
 }
 
-li {
+.no-numbers {
+    list-style-type: none;
+}
+
+.no-numbers li {
     text-align: center;
     margin-block-start: 1rem;
     margin-block-end: 1rem
 }
 
-li h3 {
+.no-numbers h3 {
     font-size: 15px;
     margin: 1rem 0 0.5rem 0;
-}
-
-.no-numbers {
-    list-style-type: none;
 }
 
 #sister-projects ol {
@@ -1734,9 +1734,6 @@ li h3 {
 /*
  * STORY ITEM
 */
-article {
-
-}
 .story figure {
     float: left;
     width: 45%;
