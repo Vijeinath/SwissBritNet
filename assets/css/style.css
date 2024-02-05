@@ -794,7 +794,7 @@ a.white-text:hover {
 }
 
 .red-text {
-  color: #9f0b0b;  
+  color: #9f0b0b;
 }
 
 /* Text styles */
@@ -1024,7 +1024,7 @@ blockquote {
 }
 
 .collage-background {
-  background: url(../img/collage.jpeg) no-repeat;
+  background: url(../img/collage.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -1034,7 +1034,6 @@ blockquote {
 
 .background-overlay:before {
   content: '';
-  background-color: rgba(0,0,0,0.2);
   height: 100%;
   width: 100%;
   position: absolute;
