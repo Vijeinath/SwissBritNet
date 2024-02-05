@@ -1732,14 +1732,26 @@ display: none;
 /*
  * STORY ITEM
 */
-.story figure {
+.figure-left-float {
     float: left;
-    width: 45%;
     margin-inline-end: 4rem;
 }
 
-.story > figure > img {
+.figure-right-float {
+    float: right;
+    margin-inline-start: 4rem;
+}
+
+.width-100 {
     width: 100%;
+}
+
+.width-45 {
+    width: 45%;
+}
+
+.width-20 {
+    width: 20%;
 }
 
 .story address {
