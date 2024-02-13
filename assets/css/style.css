@@ -1483,6 +1483,10 @@ display: none;
     object-fit: cover;
 }
 
+#sister-projects h3 {
+    font-weight: bold;
+}
+
 /* Section: We-are-creative */ 
 .section-we-are-creative .col-sm-6 {
   padding: 0;
