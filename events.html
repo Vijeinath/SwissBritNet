@@ -52,7 +52,15 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li class="active"><a href="events.html">Events</a></li>
+                            <li class="dropdown active">
+                                <a href="events.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Events <i class="fa fa-angle-down hidden-xs" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="events.html#conference">Conference</a></li>
+                                    <li><a href="events.html#workshop">Workshop</a></li>
+                                    <li><a href="events.html#teaching">Teaching</a></li>
+                                    <li><a href="events.html#exhibition">Exhibition</a></li>
+                                </ul>
+                            </li>
                             <li><a href="stories.html">Stories</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="publications.html">Publications</a></li>
@@ -73,33 +81,101 @@
 
         <main id="main" class="site-main">
 
-            <section class="site-section-small">
-                <div class="container publications">
-                    <h3 class="section-title-small text-center mb-50">Conferences, courses and workshops <br>involving team members, research partners <br>and critical friends</h3>
-
-                    <section>
-                        <div class="section-subtitle">2026</div>
-                        <p class="indent">Exhibition at University Library Basel</p>
-                    </section>
-
-                    <section>
-                        <div class="section-subtitle">2025</div>
-                        <p class="indent">Spring semester Seminar “xxx” taught by <a href="about.html#team-basel">Ina Habermann</a> and <a href="about.html#team-basel">Philippe Schmid</a> at University of Basel</p>
-                    </section>
-
-                    <section>
-                        <div class="section-subtitle">2024</div>
-                        <p class="indent">Seminar <a href="https://vorlesungsverzeichnis.unibas.ch/de/home?id=282824">"Early Modern Travel Writing"</a> taught by Ina Habermann at University of Basel</p>
-                        <p class="indent">4-6 September Conference “Medieval and Early Modern Swiss-British Relations (Eighth Biennial SAMEMES Conference) at University of Basel</p>
-                    </section>
-
-                    <section>
-                        <div class="section-subtitle">2023</div>
-                        <p class="indent">Kick-off conference “SwissBritNet” at University of Basel. Impressions.</p>
-                    </section>
-                </div>
-
+            <section class="container section-container">
+                <div class="section-item"><a href="events.html#conference">Conference</a></div>
+                <div class="section-item"><a href="events.html#workshop">Workshop</a></div>
+                <div class="section-item"><a href="events.html#teaching">Teaching</a></div>
+                <div class="section-item"><a href="events.html#exhibition">Exhibition</a></div>
             </section>
+
+            <section id="conference" class="site-section-small">
+                <div class="container home">
+                    <h2 class="section-title text-center">Conference</h2>
+                    <p>
+                        Coming soon ...
+                    </p>
+                </div>
+            </section>
+
+            <section id="workshop" class="site-section-small">
+                <div class="container home">
+                    <h2 class="section-title text-center">Workshop</h2>
+                    <p>
+                        Coming soon ...
+                    </p>
+                </div>
+            </section>
+
+            <section id="teaching" class="site-section-small">
+                <div class="container home">
+                    <h2 class="section-title text-center">Teaching</h2>
+                    <p>
+                        Coming soon ...
+                    </p>
+                </div>
+            </section>
+
+            <section id="exhibition" class="site-section-small">
+                <div class="container home">
+                    <h2 class="section-title text-center">Exhibition</h2>
+                    <p>
+                        Coming soon ...
+                    </p>
+                </div>
+            </section>
+
+            <script>
+                window.addEventListener('hashchange', showContent)
+
+                function showContent() {
+                    document.getElementById("conference").style.display = "none";
+                    document.getElementById("workshop").style.display = "none";
+                    document.getElementById("teaching").style.display = "none";
+                    document.getElementById("exhibition").style.display = "none";
+
+                    if (location.hash === "#conference") {
+                        document.getElementById("conference").style.display = "block";
+                    } else if (location.hash === "#workshop") {
+                        document.getElementById("workshop").style.display = "block";
+                    } else if (location.hash === "#teaching") {
+                        document.getElementById("teaching").style.display = "block";
+                    } else if (location.hash === "#exhibition") {
+                        document.getElementById("exhibition").style.display = "block";
+                    } else {
+                        document.getElementById("conference").style.display = "block";
+                    }
+                }
+
+                showContent();
+            </script>
+
+<!--            <section class="site-section-small">-->
+<!--                <div class="container publications">-->
+<!--                    <h3 class="section-title-small text-center mb-50">Conferences, courses and workshops <br>involving team members, research partners <br>and critical friends</h3>-->
+
+<!--                    <section>-->
+<!--                        <div class="section-subtitle">2026</div>-->
+<!--                        <p class="indent">Exhibition at University Library Basel</p>-->
+<!--                    </section>-->
+
+<!--                    <section>-->
+<!--                        <div class="section-subtitle">2025</div>-->
+<!--                        <p class="indent">Spring semester Seminar “xxx” taught by <a href="about.html#team-basel">Ina Habermann</a> and <a href="about.html#team-basel">Philippe Schmid</a> at University of Basel</p>-->
+<!--                    </section>-->
+
+<!--                    <section>-->
+<!--                        <div class="section-subtitle">2024</div>-->
+<!--                        <p class="indent">Seminar <a href="https://vorlesungsverzeichnis.unibas.ch/de/home?id=282824">"Early Modern Travel Writing"</a> taught by Ina Habermann at University of Basel</p>-->
+<!--                        <p class="indent">4-6 September Conference “Medieval and Early Modern Swiss-British Relations (Eighth Biennial SAMEMES Conference) at University of Basel</p>-->
+<!--                    </section>-->
+
+<!--                    <section>-->
+<!--                        <div class="section-subtitle">2023</div>-->
+<!--                        <p class="indent">Kick-off conference “SwissBritNet” at University of Basel. Impressions.</p>-->
+<!--                    </section>-->
+<!--                </div>-->
+
+<!--            </section>-->
         </main>
 
         <footer id="colophon" class="site-footer">
