@@ -74,11 +74,11 @@
         <main id="main" class="site-main">
 
             <section class="container section-container">
-                <div class="section-item" onclick="myFunction('the-project')">The Project</div>
-                <div class="section-item" onclick="myFunction('team-basel')">Team in Basel</div>
-                <div class="section-item" onclick="myFunction('team-bern')">Team in Bern</div>
-                <div class="section-item" onclick="myFunction('project-partners')">Project Partners</div>
-                <div class="section-item" onclick="myFunction('sister-projects')">Sister Projects</div>
+                <div class="section-item"><a href="about.html#the-project">The Project</a></div>
+                <div class="section-item"><a href="about.html#team-basel">Team in Basel</a></div>
+                <div class="section-item"><a href="about.html#team-bern">Team in Bern</a></div>
+                <div class="section-item"><a href="about.html#project-partners">Project Partners</a></div>
+                <div class="section-item"><a href="about.html#sister-projects">Sister Projects</a></div>
             </section>
 
             <section id="the-project" class="site-section-small">
@@ -236,15 +236,31 @@
             </section>
 
             <script>
-                function myFunction(section) {
+                window.addEventListener('hashchange', showContent)
+
+                function showContent() {
                     document.getElementById("the-project").style.display = "none";
                     document.getElementById("team-basel").style.display = "none";
                     document.getElementById("team-bern").style.display = "none";
                     document.getElementById("project-partners").style.display = "none";
                     document.getElementById("sister-projects").style.display = "none";
 
-                    document.getElementById(section).style.display = "block";
+                    if (location.hash === "#the-project") {
+                        document.getElementById("the-project").style.display = "block";
+                    } else if (location.hash === "#team-basel") {
+                        document.getElementById("team-basel").style.display = "block";
+                    } else if (location.hash === "#team-bern") {
+                        document.getElementById("team-bern").style.display = "block";
+                    } else if (location.hash === "#project-partners") {
+                        document.getElementById("project-partners").style.display = "block";
+                    } else if (location.hash === "#sister-projects") {
+                        document.getElementById("sister-projects").style.display = "block";
+                    }  else {
+                        document.getElementById("the-project").style.display = "block";
+                    }
                 }
+
+                showContent();
             </script>
 
         </main>
