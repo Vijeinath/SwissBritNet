@@ -1097,7 +1097,7 @@ blockquote {
 }
 
 .site-section-small {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .section-title {
@@ -1544,6 +1544,139 @@ display: none;
 .section-clients-2 .slick-dots {
   top: auto;
   bottom: -35px;
+}
+
+/*
+ * EVENTS
+ */
+#conference-article > header,
+#conference-article > section,
+#conference-article > footer {
+    margin-bottom: 3rem;
+}
+
+#conference-article > header {
+    text-align: center;
+}
+
+#conference-article > header > p {
+    margin-bottom: 0;
+}
+
+#call-paper figure {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+#call-paper img {
+    width: 80%;
+}
+
+#call-paper h4 {
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+}
+
+#call-paper > p {
+    text-align: justify;
+}
+
+#speakers h5, #topics h5 {
+    font-weight: bold;
+}
+
+#conf-text > p {
+    text-align: justify;
+}
+
+#kickoff-article > header,
+#kickoff-article > section {
+    margin-bottom: 3rem;
+}
+
+#kickoff-article > header {
+    text-align: center;
+}
+
+#kickoff-article > header > p {
+    margin-bottom: 0;
+}
+
+#kickoff-article > header > h3 {
+    margin-top: 10px;
+}
+
+table td {
+    /*border: 1px solid red;*/
+    vertical-align: top;
+    padding: 0.5rem;
+}
+
+table em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#workshop-article > header,
+#workshop-article > section {
+    margin-bottom: 3rem;
+}
+
+#workshop-article > header > h3 {
+    font-size: large;
+}
+
+#abstract > h3,
+#program-spring-2024 > h3 {
+    font-size: medium;
+    text-decoration: underline;
+}
+
+#abstract > p {
+    text-align: justify;
+}
+
+.program-section, #note {
+    margin: 2rem 0;
+}
+
+.program-section > h4 {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 0.5rem;
+}
+
+.program-section > span {
+    text-decoration: underline;
+}
+
+.program-section > cite {
+    display: block;
+}
+
+#teaching-article > section {
+    margin-bottom: 3rem;
+}
+
+#teaching-article > section > h3 {
+    text-decoration: underline;
+    font-size: large;
+}
+
+#teaching-2024 > h4,
+#teaching-2025 > h4 {
+    font-weight: bold;
+}
+
+#teaching-2024 > h5,
+#teaching-2025 > h5 {
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+#exhibition-article > p {
+    text-align: justify;
 }
 
 /*
