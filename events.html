@@ -74,9 +74,11 @@
         <main id="main" class="site-main">
 
             <section class="container section-container">
-                <div class="section-item"><a href="events.html#conferences">Conferences</a></div>
-                <div class="section-item"><a href="events.html#workshops">Workshops</a></div>
-                <div class="section-item"><a href="events.html#teaching">Teaching and Outreach</a></div>
+                <menu class="portfolio-sorting list-inline text-center">
+                    <li id="tab-conferences" class="section-item"><a href="events.html#conferences">Conferences</a></li>
+                    <li id="tab-workshops" class="section-item"><a href="events.html#workshops">Workshops</a></li>
+                    <li id="tab-teaching" class="section-item"><a href="events.html#teaching">Teaching and Outreach</a></li>
+                </menu>
             </section>
 
             <section id="conferences" class="site-section-small">
@@ -246,21 +248,27 @@
             </section>
 
             <script>
+                const tabs = ["conferences", "workshops", "teaching"]
                 window.addEventListener('hashchange', showContent)
 
                 function showContent() {
-                    document.getElementById("conferences").style.display = "none";
-                    document.getElementById("workshops").style.display = "none";
-                    document.getElementById("teaching").style.display = "none";
+                    for (let i = 0; i < tabs.length; i++) {
+                        document.getElementById(tabs[i]).style.display = "none";
+                        document.getElementById("tab-" + tabs[i]).classList.remove("active");
+                    }
 
                     if (location.hash === "#conferences") {
                         document.getElementById("conferences").style.display = "block";
+                        document.getElementById("tab-conferences").classList.add("active");
                     } else if (location.hash === "#workshops") {
                         document.getElementById("workshops").style.display = "block";
+                        document.getElementById("tab-workshops").classList.add("active");
                     } else if (location.hash === "#teaching") {
                         document.getElementById("teaching").style.display = "block";
+                        document.getElementById("tab-teaching").classList.add("active");
                     } else {
                         document.getElementById("conferences").style.display = "block";
+                        document.getElementById("tab-conferences").classList.add("active");
                     }
                 }
 

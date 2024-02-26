@@ -442,13 +442,6 @@ a.white-text:hover {
 /*
  * PORTFOLIO
  */
-.portfolio-sorting .active,
-.portfolio-sorting .btn:active {
-  background-color: #9f0b0b; 
-  border-color: #9f0b0b; 
-  color: #fff;
-}
-
 .portfolio-link:hover .portfolio-info::before {
   background: #ffffff;
 }

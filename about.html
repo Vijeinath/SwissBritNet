@@ -74,11 +74,13 @@
         <main id="main" class="site-main">
 
             <section class="container section-container">
-                <div class="section-item"><a href="about.html#the-project">The Project</a></div>
-                <div class="section-item"><a href="about.html#team-basel">Team in Basel</a></div>
-                <div class="section-item"><a href="about.html#team-bern">Team in Bern</a></div>
-                <div class="section-item"><a href="about.html#project-partners">Project Partners</a></div>
-                <div class="section-item"><a href="about.html#sister-projects">Sister Projects</a></div>
+                <menu class="portfolio-sorting list-inline text-center">
+                    <li id="tab-the-project" class="section-item"><a href="about.html#the-project">The Project</a></li>
+                    <li id="tab-team-basel" class="section-item"><a href="about.html#team-basel">Team in Basel</a></li>
+                    <li id="tab-team-bern" class="section-item"><a href="about.html#team-bern">Team in Bern</a></li>
+                    <li id="tab-project-partners" class="section-item"><a href="about.html#project-partners">Project Partners</a></li>
+                    <li id="tab-sister-projects" class="section-item"><a href="about.html#sister-projects">Sister Projects</a></li>
+                </menu>
             </section>
 
             <section id="the-project" class="site-section-small">
@@ -247,27 +249,33 @@
             </section>
 
             <script>
+                const tabs = ["the-project", "team-basel", "team-bern", "project-partners", "sister-projects"]
                 window.addEventListener('hashchange', showContent)
 
                 function showContent() {
-                    document.getElementById("the-project").style.display = "none";
-                    document.getElementById("team-basel").style.display = "none";
-                    document.getElementById("team-bern").style.display = "none";
-                    document.getElementById("project-partners").style.display = "none";
-                    document.getElementById("sister-projects").style.display = "none";
+                    for (let i = 0; i < tabs.length; i++) {
+                        document.getElementById(tabs[i]).style.display = "none";
+                        document.getElementById("tab-" + tabs[i]).classList.remove("active");
+                    }
 
                     if (location.hash === "#the-project") {
                         document.getElementById("the-project").style.display = "block";
+                        document.getElementById("tab-the-project").classList.add("active");
                     } else if (location.hash === "#team-basel") {
                         document.getElementById("team-basel").style.display = "block";
+                        document.getElementById("tab-team-basel").classList.add("active");
                     } else if (location.hash === "#team-bern") {
                         document.getElementById("team-bern").style.display = "block";
+                        document.getElementById("tab-team-bern").classList.add("active");
                     } else if (location.hash === "#project-partners") {
                         document.getElementById("project-partners").style.display = "block";
+                        document.getElementById("tab-project-partners").classList.add("active");
                     } else if (location.hash === "#sister-projects") {
                         document.getElementById("sister-projects").style.display = "block";
+                        document.getElementById("tab-sister-projects").classList.add("active");
                     }  else {
                         document.getElementById("the-project").style.display = "block";
+                        document.getElementById("tab-the-project").classList.add("active");
                     }
                 }
 
