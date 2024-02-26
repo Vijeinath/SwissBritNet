@@ -546,15 +546,6 @@ a.post-title:hover,
   color: #333;
 }
 
-/* copyright */
-.copyright {
-  border-top: 2px solid #f9f8f8;
-}
-
-.copyright .red-text:hover {
-  color: #9f0b0b;
-}
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) { 
   .nav-tabs {
