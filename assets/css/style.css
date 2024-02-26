@@ -1549,45 +1549,34 @@ display: none;
 /*
  * EVENTS
  */
-#conference-article > header,
-#conference-article > section,
-#conference-article > footer {
-    margin-bottom: 3rem;
+
+.expansion-section {
+    margin-bottom: 2rem;
 }
 
-#conference-article > header {
-    text-align: center;
+details[open] > section {
+    padding: 2rem;
+    border-left: 1px solid #bbbbbb;
+    border-right: 1px solid #bbbbbb;
+    border-bottom: 1px solid #bbbbbb;
 }
 
-#conference-article > header > p {
-    margin-bottom: 0;
-}
-
-#call-paper figure {
-    text-align: center;
-    margin: 3rem 0;
-}
-
-#call-paper img {
-    width: 80%;
-}
-
-#call-paper h4 {
+summary {
+    background-color: #9f0b0b;
+    color: white;
     font-weight: bold;
-    text-align: center;
-    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#call-paper > p {
-    text-align: justify;
+summary span {
+    padding: 1.5rem 2rem;
 }
 
-#speakers h5, #topics h5 {
-    font-weight: bold;
-}
-
-#conf-text > p {
-    text-align: justify;
+summary:hover {
+    cursor: pointer;
 }
 
 #kickoff-article > header,
@@ -1617,12 +1606,12 @@ table em {
     font-style: normal;
 }
 
-#workshop-article > header,
-#workshop-article > section {
+#workshops-article > header,
+#workshops-article > section {
     margin-bottom: 3rem;
 }
 
-#workshop-article > header > h3 {
+#workshops-article > header > h3 {
     font-size: large;
 }
 
@@ -1652,30 +1641,6 @@ table em {
 
 .program-section > cite {
     display: block;
-}
-
-#teaching-article > section {
-    margin-bottom: 3rem;
-}
-
-#teaching-article > section > h3 {
-    text-decoration: underline;
-    font-size: large;
-}
-
-#teaching-2024 > h4,
-#teaching-2025 > h4 {
-    font-weight: bold;
-}
-
-#teaching-2024 > h5,
-#teaching-2025 > h5 {
-    text-decoration: underline;
-    margin-top: 2rem;
-}
-
-#exhibition-article > p {
-    text-align: justify;
 }
 
 /*
