@@ -1549,7 +1549,6 @@ display: none;
 /*
  * EVENTS
  */
-
 .expansion-section {
     margin-bottom: 2rem;
 }
@@ -1579,6 +1578,9 @@ summary:hover {
     cursor: pointer;
 }
 
+/*
+ * KICKOFF
+ */
 #kickoff-article > header,
 #kickoff-article > section {
     margin-bottom: 3rem;
@@ -1606,6 +1608,9 @@ table em {
     font-style: normal;
 }
 
+/*
+ * WORKSHOP
+ */
 #workshops-article > header,
 #workshops-article > section {
     margin-bottom: 3rem;
