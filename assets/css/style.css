@@ -1547,38 +1547,6 @@ display: none;
 }
 
 /*
- * EVENTS
- */
-.expansion-section {
-    margin-bottom: 2rem;
-}
-
-details[open] > section {
-    padding: 2rem;
-    border-left: 1px solid #bbbbbb;
-    border-right: 1px solid #bbbbbb;
-    border-bottom: 1px solid #bbbbbb;
-}
-
-summary {
-    background-color: #9f0b0b;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-summary span {
-    padding: 1.5rem 2rem;
-}
-
-summary:hover {
-    cursor: pointer;
-}
-
-/*
  * KICKOFF
  */
 #kickoff-article > header,
