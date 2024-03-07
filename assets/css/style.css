@@ -1547,6 +1547,23 @@ display: none;
 }
 
 /*
+ * EVENTS
+ */
+#samemes {
+    background-color: #9f0b0b;
+    color: white;
+    padding: 1rem;
+}
+
+#samemes > .section-subtitle {
+    margin-top: 1rem;
+}
+
+#samemes a {
+    color: black;
+}
+
+/*
  * KICKOFF
  */
 #kickoff-article > header,
