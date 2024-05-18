@@ -1131,6 +1131,16 @@ blockquote {
     margin-top: 2rem;
 }
 
+.quote-section {
+    clear: left;
+    text-align: center;
+}
+
+.quote-section > blockquote {
+    display: inline-block;
+    text-align: left;
+}
+
 /* PAGES
 ================================================== */
 
