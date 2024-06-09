@@ -1016,6 +1016,47 @@ blockquote {
 
 /* HERO
 ================================================== */
+
+/* Test code start .......*/
+#h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 64px;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
+}
+
+#ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(9, minmax(200px, 1fr));
+    height: 100vh;
+    overflow: hidden;
+    padding:0;
+}
+
+#ul li {
+    line-height: 0;
+}
+
+#ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hover-story:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.hover-story {
+    transition: .5s ease;
+}
+
+/* ....... Test code end*/
+
 .hero {
   height: 100%;
   width: 100%;
