@@ -1018,6 +1018,10 @@ blockquote {
 ================================================== */
 
 /* Test code start .......*/
+#collage-section {
+    position: relative;
+}
+
 #h1 {
     position: absolute;
     top: 50%;
@@ -1030,7 +1034,7 @@ blockquote {
 #ul {
     display: grid;
     list-style-type: none;
-    grid-template-columns: repeat(9, minmax(200px, 1fr));
+    grid-template-columns: repeat(9, minmax(100px, 1fr));
     height: 100vh;
     overflow: hidden;
     padding:0;
@@ -1048,7 +1052,6 @@ blockquote {
 
 .hover-story:hover {
     opacity: 0.7;
-    cursor: pointer;
 }
 
 .hover-story {
