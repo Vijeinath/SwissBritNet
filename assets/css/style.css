@@ -1014,24 +1014,26 @@ blockquote {
   padding: 5px 15px;
 }
 
-/* HERO
+/* COLLAGE
 ================================================== */
-
-/* Test code start .......*/
-#collage-section {
+.collage-section {
     position: relative;
 }
 
-#h1 {
+.collage-section h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: 64px;
     font-weight: 700;
     transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
-#ul {
+.collage-section ul {
     display: grid;
     list-style-type: none;
     grid-template-columns: repeat(9, minmax(100px, 1fr));
@@ -1040,11 +1042,15 @@ blockquote {
     padding:0;
 }
 
-#ul li {
+.collage-max-500 ul{
+    max-height: 500px;
+}
+
+.collage-section ul li {
     line-height: 0;
 }
 
-#ul li img {
+.collage-section ul li img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1058,58 +1064,7 @@ blockquote {
     transition: .5s ease;
 }
 
-/* ....... Test code end*/
-
-.hero {
-  height: 100%;
-  width: 100%;
-  display: table;
-  position: relative;
-}
-
-.collage-background {
-  background: url(../img/collage.jpg) no-repeat;
-  background-size: cover;
-}
-
-.hero-max-500 {
-  max-height: 500px;
-}
-
-.background-overlay:before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.hero-text {
-  color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
-}
-
-.hero-text h1 {
-  max-width: 790px;
-  width: 100%;
-  padding: 0 15px;
-  font-size: 64px;
-  font-weight: 700;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.hero-text span {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 20px;
-}
-
-.hero-arrow {
+.collage-arrow {
   position: absolute;
   bottom: 5%;
   left: 50%;
@@ -1120,12 +1075,12 @@ blockquote {
   -ms-transform: translateX(-50%);
 }
 
-.hero-arrow a {
+.collage-arrow a {
   color: #fff;
   font-size: 44px;
 }
 
-.hero-arrow a:hover {
+.collage-arrow a:hover {
   color: #9f0b0b; 
 }
 

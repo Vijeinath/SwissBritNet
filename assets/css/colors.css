@@ -336,15 +336,15 @@ a.white-text:hover {
 
 /* HERO
 ================================================== */
-.hero-text {
+.collage-section {
   color: #fff;
 }
 
-.hero-arrow a {
+.collage-arrow a {
   color: #fff;
 }
 
-.hero-arrow a:hover {
+.collage-arrow a:hover {
   color: #9f0b0b; 
 }
 
