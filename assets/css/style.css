@@ -2177,6 +2177,14 @@ a.post-title:hover,
   width: 100%
 }
 
+.social-media {
+  margin: 2rem;
+}
+
+.social-media img {
+  height: 4rem;
+}
+
 /* FOOTER
 ================================================== */
 .site-footer {
