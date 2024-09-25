@@ -1484,6 +1484,14 @@ display: none;
 /*
  * ABOUT-US
  */
+
+.about-menu {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    justify-content: center;
+}
+
 #team-basel ol, #team-bern ol, #project-partners ol {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
