@@ -1,1 +1,1 @@
-# Swiss-Brit-Test
+# SwissBritNet
