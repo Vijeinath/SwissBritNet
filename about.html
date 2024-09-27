@@ -215,7 +215,7 @@
                     <li id="tab-team-bern" class="section-item"><a href="about.html#team-bern">Team in Bern</a></li>
                     <li id="tab-project-partners" class="section-item"><a href="about.html#project-partners">Project Partners</a></li>
                     <li id="tab-sister-projects" class="section-item"><a href="about.html#sister-projects">Sister Projects</a></li>
-                    <li id="tab-librarians" class="section-item"><a href="about.html#librarians">Librarians</a></li>
+                    <li id="tab-libraries" class="section-item"><a href="about.html#libraries">Libraries</a></li>
                 </menu>
             </section>
 
@@ -405,15 +405,15 @@
                 </div>
             </section>
 
-            <section id="librarians" class="site-section-small" style="display: none">
+            <section id="libraries" class="site-section-small" style="display: none">
                 <div class="container">
-                    <h2 class="section-title text-center">Librarians</h2>
+                    <h2 class="section-title text-center">Libraries</h2>
                     <p style="text-align: center;">cooming soon</p>
                 </div>
             </section>
 
             <script>
-                const tabs = ["the-project", "team-basel", "team-bern", "project-partners", "sister-projects", "librarians"]
+                const tabs = ["the-project", "team-basel", "team-bern", "project-partners", "sister-projects", "libraries"]
                 window.addEventListener('hashchange', showContent)
 
                 function showContent() {
@@ -437,9 +437,9 @@
                     } else if (location.hash === "#sister-projects") {
                         document.getElementById("sister-projects").style.display = "block";
                         document.getElementById("tab-sister-projects").classList.add("active");
-                    }  else if (location.hash === "#librarians") {
-                        document.getElementById("librarians").style.display = "block";
-                        document.getElementById("tab-librarians").classList.add("active");
+                    }  else if (location.hash === "#libraries") {
+                        document.getElementById("libraries").style.display = "block";
+                        document.getElementById("tab-libraries").classList.add("active");
                     } else {
                         document.getElementById("the-project").style.display = "block";
                         document.getElementById("tab-the-project").classList.add("active");
