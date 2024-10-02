@@ -1678,6 +1678,18 @@ table em {
     margin: 2rem 0;
 }
 
+.program-section > cite::before {
+  content: "“";
+}
+
+.program-section > cite::after {
+  content: "”";
+}
+
+#note {
+  font-weight: bold;
+}
+
 .program-section > h4 {
     font-weight: bold;
     font-size: medium;
